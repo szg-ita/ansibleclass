@@ -73,7 +73,7 @@
       tags:
           solution: "webserver_{{ user }}"
           delete: ansibletraining
-            - name: Create a VM webserver
+  - name: Create a VM webserver
     azure_rm_virtualmachine:
       resource_group: "{{ resource_group }}"
       name: "webserver"
