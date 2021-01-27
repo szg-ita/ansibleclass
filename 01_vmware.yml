@@ -70,7 +70,7 @@
 
   - name: Add ansibleserver to ssh known_hosts
     shell: "ssh-keyscan -t ecdsa {{ webserver_ip_fact }}  >> /home/{{ ansible_user_id }}/.ssh/known_hosts"
-- name: Create a category
+  - name: Create a category
     vmware_category:
       hostname: "{{ hostname }}"
       username: "{{ username }}"
