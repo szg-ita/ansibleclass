@@ -60,7 +60,7 @@
         connected: true
       wait_for_ip_address: "yes"
     register: "webserver"
-- name: Set Fact webserver_ip_fact
+  - name: Set Fact webserver_ip_fact
     set_fact:
      webserver_ip_fact: "{{ webserver.instance.ipv4 }}"
 
