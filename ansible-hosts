@@ -1,0 +1,11 @@
+[linuxservers]
+server1
+server2
+
+[windowsservers:vars]
+ansible_user=destified
+ansible_password=Leper1349
+ansible_port=5985
+ansible_connection=winrm
+ansible_winrm_transport=ntlm
+ansible_winrm_message_encryption=always
