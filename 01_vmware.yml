@@ -34,7 +34,7 @@
       esxi_hostname: "{{ esxihostname }}"
       portgroup_name: "{{ portgroup_name }}"
     delegate_to: localhost
-     - name: Clone Centos 8 to webserver
+  - name: Clone Centos 8 to webserver
     vmware_guest:
       hostname: "{{ hostname }}"
       username: "{{ username }}"
