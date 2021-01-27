@@ -1,5 +1,5 @@
 ---
-- hosts: tag_solution_webserver_destified
+- hosts: tag_solution_webserver_webuser3
   become: yes
   vars:
   tasks:
